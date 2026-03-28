@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — MindMesh Technology</title>
+  <meta name="description" content="Explore MindMesh Technology's full range of tech services — custom software, mobile apps, AI/ML, cloud, DevOps, cybersecurity, blockchain, IoT, AR/VR, data, UI/UX, and more." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f8ef7'/><text y='24' x='5' font-size='22'>🔮</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .svc-category { margin-bottom: 80px; }
+    .svc-category-header { display:flex; align-items:center; gap:16px; margin-bottom:32px; padding-bottom:16px; border-bottom:1px solid var(--clr-border); }
+    .svc-category-icon { width:56px; height:56px; border-radius:14px; display:grid; place-items:center; font-size:1.6rem; flex-shrink:0; }
+    .svc-category-header h2 { font-family:'Space Grotesk',sans-serif; font-size:1.5rem; font-weight:800; margin-bottom:4px; }
+    .svc-category-header p { color:var(--clr-muted); font-size:.88rem; margin:0; }
+    .svc-mini-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:18px; }
+    .svc-mini-card { background:var(--clr-surface); border:1px solid var(--clr-border); border-radius:14px; padding:24px; transition:transform .25s,border-color .25s,box-shadow .25s; }
+    .svc-mini-card:hover { transform:translateY(-4px); border-color:rgba(79,142,247,.4); box-shadow:0 12px 40px rgba(79,142,247,.12); }
+    .svc-mini-card .icon { font-size:1.8rem; margin-bottom:12px; }
+    .svc-mini-card h4 { font-weight:700; font-family:'Space Grotesk',sans-serif; margin-bottom:8px; font-size:1rem; }
+    .svc-mini-card p { color:var(--clr-muted); font-size:.83rem; line-height:1.65; margin:0; }
+    .svc-tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:12px; }
+    .svc-tag { background:rgba(79,142,247,.1); color:var(--clr-primary); border:1px solid rgba(79,142,247,.2); border-radius:20px; padding:2px 10px; font-size:.72rem; font-weight:600; }
+  </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">🔮</div>
+    <span>MindMesh</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav-cta">Get Started</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary" style="justify-content:center;margin-top:8px;">Get Started</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('images/services_banner.png');"></div>
+  <div class="glow-blob" style="width:500px;height:500px;background:rgba(79,142,247,.3);top:-100px;left:50%;transform:translateX(-50%);z-index:0;"></div>
+  <div style="position:relative;z-index:1;">
+    <div class="section-label" style="justify-content:center;">What We Offer</div>
+    <h1>Our <span style="background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Services</span></h1>
+    <p>End-to-end technology services across every domain of modern software — built for startups, SMEs, and global enterprises.</p>
+  </div>
+</div>
+
+<!-- SERVICES OVERVIEW STATS -->
+<div style="background:var(--clr-surface);border-bottom:1px solid var(--clr-border);">
+  <div style="max-width:1200px;margin:0 auto;padding:32px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;">
+    <div><div style="font-size:2rem;font-weight:800;font-family:'Space Grotesk',sans-serif;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">20+</div><div style="color:var(--clr-muted);font-size:.85rem;">Service Categories</div></div>
+    <div><div style="font-size:2rem;font-weight:800;font-family:'Space Grotesk',sans-serif;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">80+</div><div style="color:var(--clr-muted);font-size:.85rem;">Technologies Covered</div></div>
+    <div><div style="font-size:2rem;font-weight:800;font-family:'Space Grotesk',sans-serif;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">350+</div><div style="color:var(--clr-muted);font-size:.85rem;">Projects Delivered</div></div>
+    <div><div style="font-size:2rem;font-weight:800;font-family:'Space Grotesk',sans-serif;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">99%</div><div style="color:var(--clr-muted);font-size:.85rem;">Client Satisfaction</div></div>
+  </div>
+</div>
+
+<!-- ALL SERVICES -->
+<section style="background:var(--clr-bg);">
+  <div class="section-header fade-up" style="margin-bottom:64px;">
+    <div class="section-label">All Services</div>
+    <h2 class="section-title">Technology Solutions for <span style="background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Every Challenge</span></h2>
+    <p class="section-sub">From code to cloud, from design to deployment — we cover the entire technology stack for modern businesses.</p>
+  </div>
+
+  <!-- 1. Custom Software Development -->
+  <div class="svc-category fade-up">
+    <div class="svc-category-header">
+      <div class="svc-category-icon" style="background:rgba(79,142,247,.15);">💻</div>
+      <div>
+        <h2>Custom Software Development</h2>
+        <p>Bespoke web apps, enterprise platforms, and APIs built to your exact specifications.</p>
+      </div>
+    </div>
+    <div class="svc-mini-grid">
+      <div class="svc-mini-card">
+        <div class="icon">⚛️</div>
+        <h4>Web Application Development</h4>
+        <p>Scalable, responsive web apps using React, Vue, Angular, and Next.js with pixel-perfect UI and blazing performance.</p>
+        <div class="svc-tags"><span class="svc-tag">React</span><span class="svc-tag">Vue</span><span class="svc-tag">Next.js</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🔧</div>
+        <h4>Backend & API Development</h4>
+        <p>Robust RESTful and GraphQL APIs built with Node.js, Python (Django/FastAPI), Laravel, Go, or .NET.</p>
+        <div class="svc-tags"><span class="svc-tag">Node.js</span><span class="svc-tag">FastAPI</span><span class="svc-tag">Laravel</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🏗️</div>
+        <h4>Microservices Architecture</h4>
+        <p>Break monoliths into maintainable, independently deployable microservices with event-driven communication.</p>
+        <div class="svc-tags"><span class="svc-tag">Docker</span><span class="svc-tag">Kubernetes</span><span class="svc-tag">gRPC</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🛒</div>
+        <h4>E-Commerce Development</h4>
+        <p>Custom storefronts, Shopify/WooCommerce setups, payment gateways, and scalable checkout flows for high-volume stores.</p>
+        <div class="svc-tags"><span class="svc-tag">Shopify</span><span class="svc-tag">WooCommerce</span><span class="svc-tag">Stripe</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🗄️</div>
+        <h4>Database Design & Optimization</h4>
+        <p>Schema design, query tuning, indexing strategies, and migrations for SQL and NoSQL databases.</p>
+        <div class="svc-tags"><span class="svc-tag">PostgreSQL</span><span class="svc-tag">MongoDB</span><span class="svc-tag">Redis</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🔗</div>
+        <h4>Third-Party Integrations</h4>
+        <p>Seamlessly connect your systems with Salesforce, HubSpot, Stripe, Twilio, Slack, and 100+ other APIs.</p>
+        <div class="svc-tags"><span class="svc-tag">Salesforce</span><span class="svc-tag">HubSpot</span><span class="svc-tag">Twilio</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Mobile App Development -->
+  <div class="svc-category fade-up">
+    <div class="svc-category-header">
+      <div class="svc-category-icon" style="background:rgba(124,58,237,.15);">📱</div>
+      <div>
+        <h2>Mobile App Development</h2>
+        <p>Beautiful, high-performance iOS and Android apps that users love.</p>
+      </div>
+    </div>
+    <div class="svc-mini-grid">
+      <div class="svc-mini-card">
+        <div class="icon">🦋</div>
+        <h4>Flutter Development</h4>
+        <p>Cross-platform apps with a single codebase that achieve true native performance on iOS and Android.</p>
+        <div class="svc-tags"><span class="svc-tag">Flutter</span><span class="svc-tag">Dart</span><span class="svc-tag">Cross-platform</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">⚛️</div>
+        <h4>React Native Development</h4>
+        <p>JavaScript-powered native apps with shared code, hot reloading, and rich ecosystem access.</p>
+        <div class="svc-tags"><span class="svc-tag">React Native</span><span class="svc-tag">Expo</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🍎</div>
+        <h4>Native iOS Development</h4>
+        <p>Swift and SwiftUI apps for iPhone and iPad with deep Apple ecosystem integration and App Store publishing.</p>
+        <div class="svc-tags"><span class="svc-tag">Swift</span><span class="svc-tag">SwiftUI</span><span class="svc-tag">Xcode</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🤖</div>
+        <h4>Native Android Development</h4>
+        <p>Kotlin and Jetpack Compose apps built for Android's diverse device landscape with Play Store publishing.</p>
+        <div class="svc-tags"><span class="svc-tag">Kotlin</span><span class="svc-tag">Jetpack</span><span class="svc-tag">Compose</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🔔</div>
+        <h4>Push Notifications & Offline Mode</h4>
+        <p>FCM/APNs push notifications, background sync, and offline-first architecture with local caching.</p>
+        <div class="svc-tags"><span class="svc-tag">FCM</span><span class="svc-tag">SQLite</span><span class="svc-tag">Hive</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">💳</div>
+        <h4>Mobile Payment Integration</h4>
+        <p>In-app purchases, subscriptions, Razorpay, Stripe, Google Pay, Apple Pay, and UPI integrations.</p>
+        <div class="svc-tags"><span class="svc-tag">Razorpay</span><span class="svc-tag">Stripe</span><span class="svc-tag">UPI</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. AI & Machine Learning -->
+  <div class="svc-category fade-up">
+    <div class="svc-category-header">
+      <div class="svc-category-icon" style="background:rgba(16,185,129,.15);">🤖</div>
+      <div>
+        <h2>AI & Machine Learning</h2>
+        <p>Intelligent automation, predictive analytics, and generative AI solutions at enterprise scale.</p>
+      </div>
+    </div>
+    <div class="svc-mini-grid">
+      <div class="svc-mini-card">
+        <div class="icon">🧠</div>
+        <h4>Custom ML Model Development</h4>
+        <p>Train, evaluate, and deploy custom machine learning models using TensorFlow, PyTorch, and scikit-learn.</p>
+        <div class="svc-tags"><span class="svc-tag">TensorFlow</span><span class="svc-tag">PyTorch</span><span class="svc-tag">scikit-learn</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">💬</div>
+        <h4>Natural Language Processing</h4>
+        <p>Sentiment analysis, entity recognition, chatbots, text summarization, and document processing pipelines.</p>
+        <div class="svc-tags"><span class="svc-tag">LLM</span><span class="svc-tag">spaCy</span><span class="svc-tag">BERT</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">👁️</div>
+        <h4>Computer Vision</h4>
+        <p>Object detection, face recognition, OCR, defect inspection, and real-time video analytics systems.</p>
+        <div class="svc-tags"><span class="svc-tag">OpenCV</span><span class="svc-tag">YOLO</span><span class="svc-tag">TensorRT</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🤖</div>
+        <h4>Generative AI & LLM Integration</h4>
+        <p>GPT-4, Claude, Gemini and open-source LLM integration, RAG pipelines, fine-tuning, and AI agents.</p>
+        <div class="svc-tags"><span class="svc-tag">OpenAI</span><span class="svc-tag">LangChain</span><span class="svc-tag">RAG</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">📈</div>
+        <h4>Predictive Analytics</h4>
+        <p>Demand forecasting, churn prediction, anomaly detection, and recommendation engines for data-driven decisions.</p>
+        <div class="svc-tags"><span class="svc-tag">XGBoost</span><span class="svc-tag">Prophet</span><span class="svc-tag">MLflow</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">⚙️</div>
+        <h4>MLOps & AI Pipeline Automation</h4>
+        <p>Automated ML pipelines, model monitoring, retraining schedules, and CI/CD for machine learning models.</p>
+        <div class="svc-tags"><span class="svc-tag">MLflow</span><span class="svc-tag">Kubeflow</span><span class="svc-tag">DVC</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Cloud & DevOps -->
+  <div class="svc-category fade-up">
+    <div class="svc-category-header">
+      <div class="svc-category-icon" style="background:rgba(6,182,212,.15);">☁️</div>
+      <div>
+        <h2>Cloud & DevOps</h2>
+        <p>Cloud architecture, migration, and automation for reliable, scalable infrastructure.</p>
+      </div>
+    </div>
+    <div class="svc-mini-grid">
+      <div class="svc-mini-card">
+        <div class="icon">🏗️</div>
+        <h4>Cloud Architecture & Migration</h4>
+        <p>Design and migrate workloads to AWS, GCP, or Azure with optimal cost, performance, and reliability.</p>
+        <div class="svc-tags"><span class="svc-tag">AWS</span><span class="svc-tag">GCP</span><span class="svc-tag">Azure</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🐳</div>
+        <h4>Containerization & Orchestration</h4>
+        <p>Dockerize applications and manage them with Kubernetes for auto-scaling, rolling updates, and high availability.</p>
+        <div class="svc-tags"><span class="svc-tag">Docker</span><span class="svc-tag">Kubernetes</span><span class="svc-tag">Helm</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🔄</div>
+        <h4>CI/CD Pipeline Setup</h4>
+        <p>Automated build, test, and deploy pipelines using GitHub Actions, GitLab CI, Jenkins, or CircleCI.</p>
+        <div class="svc-tags"><span class="svc-tag">GitHub Actions</span><span class="svc-tag">Jenkins</span><span class="svc-tag">ArgoCD</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🏛️</div>
+        <h4>Infrastructure as Code</h4>
+        <p>Provision and manage cloud infrastructure declaratively using Terraform, Pulumi, and CloudFormation.</p>
+        <div class="svc-tags"><span class="svc-tag">Terraform</span><span class="svc-tag">Pulumi</span><span class="svc-tag">Ansible</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">📊</div>
+        <h4>Monitoring & Observability</h4>
+        <p>Full-stack observability with Prometheus, Grafana, ELK Stack, Datadog, and PagerDuty alerts.</p>
+        <div class="svc-tags"><span class="svc-tag">Prometheus</span><span class="svc-tag">Grafana</span><span class="svc-tag">Datadog</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">⚡</div>
+        <h4>Serverless & Edge Computing</h4>
+        <p>Lambda, Cloud Functions, Cloudflare Workers — event-driven serverless architectures that scale infinitely.</p>
+        <div class="svc-tags"><span class="svc-tag">AWS Lambda</span><span class="svc-tag">Cloudflare</span><span class="svc-tag">Vercel</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Cybersecurity -->
+  <div class="svc-category fade-up">
+    <div class="svc-category-header">
+      <div class="svc-category-icon" style="background:rgba(239,68,68,.15);">🔒</div>
+      <div>
+        <h2>Cybersecurity</h2>
+        <p>Protect your systems, data, and users with enterprise-grade security practices.</p>
+      </div>
+    </div>
+    <div class="svc-mini-grid">
+      <div class="svc-mini-card">
+        <div class="icon">🛡️</div>
+        <h4>Penetration Testing & VAPT</h4>
+        <p>Ethical hacking, vulnerability assessments, and penetration testing for web, mobile, and network systems.</p>
+        <div class="svc-tags"><span class="svc-tag">OWASP</span><span class="svc-tag">Burp Suite</span><span class="svc-tag">Metasploit</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">📋</div>
+        <h4>Compliance & Risk Management</h4>
+        <p>ISO 27001, SOC 2, GDPR, HIPAA, and PCI-DSS compliance consulting, gap analysis, and implementation.</p>
+        <div class="svc-tags"><span class="svc-tag">ISO 27001</span><span class="svc-tag">GDPR</span><span class="svc-tag">SOC 2</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🔎</div>
+        <h4>SIEM & Threat Detection</h4>
+        <p>Security Information and Event Management setup, real-time threat monitoring, and incident response plans.</p>
+        <div class="svc-tags"><span class="svc-tag">Splunk</span><span class="svc-tag">Wazuh</span><span class="svc-tag">SIEM</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🔐</div>
+        <h4>Identity & Access Management</h4>
+        <p>SSO, MFA, OAuth 2.0, SAML, and zero-trust IAM frameworks using Okta, Keycloak, or AWS IAM.</p>
+        <div class="svc-tags"><span class="svc-tag">Okta</span><span class="svc-tag">Keycloak</span><span class="svc-tag">Zero Trust</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🔑</div>
+        <h4>Application Security (AppSec)</h4>
+        <p>Secure SDLC, code reviews, secrets management, DAST/SAST scanning integrated into your CI/CD pipeline.</p>
+        <div class="svc-tags"><span class="svc-tag">SAST</span><span class="svc-tag">DAST</span><span class="svc-tag">SonarQube</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🌐</div>
+        <h4>Network Security</h4>
+        <p>Firewall configuration, DDoS mitigation, VPN setup, and network segmentation for enterprise environments.</p>
+        <div class="svc-tags"><span class="svc-tag">WAF</span><span class="svc-tag">DDoS</span><span class="svc-tag">VPN</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Data & Analytics -->
+  <div class="svc-category fade-up">
+    <div class="svc-category-header">
+      <div class="svc-category-icon" style="background:rgba(234,179,8,.15);">📊</div>
+      <div>
+        <h2>Data Engineering & Analytics</h2>
+        <p>Turn raw data into actionable intelligence with modern data platforms.</p>
+      </div>
+    </div>
+    <div class="svc-mini-grid">
+      <div class="svc-mini-card">
+        <div class="icon">🔄</div>
+        <h4>ETL / ELT Pipelines</h4>
+        <p>Design and build robust data ingestion pipelines using Apache Airflow, dbt, Spark, and Kafka.</p>
+        <div class="svc-tags"><span class="svc-tag">Airflow</span><span class="svc-tag">dbt</span><span class="svc-tag">Kafka</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🏛️</div>
+        <h4>Data Warehouse & Lakehouse</h4>
+        <p>Scalable cloud data warehouses on Snowflake, BigQuery, Redshift, and Delta Lake / Apache Iceberg.</p>
+        <div class="svc-tags"><span class="svc-tag">Snowflake</span><span class="svc-tag">BigQuery</span><span class="svc-tag">Redshift</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">📉</div>
+        <h4>Business Intelligence & Dashboards</h4>
+        <p>Interactive BI dashboards in Power BI, Tableau, Looker, and embedded analytics for your products.</p>
+        <div class="svc-tags"><span class="svc-tag">Power BI</span><span class="svc-tag">Tableau</span><span class="svc-tag">Looker</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">⚡</div>
+        <h4>Real-time Streaming Analytics</h4>
+        <p>Real-time event processing with Apache Kafka, Flink, Spark Streaming, and AWS Kinesis.</p>
+        <div class="svc-tags"><span class="svc-tag">Kafka</span><span class="svc-tag">Flink</span><span class="svc-tag">Kinesis</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🔍</div>
+        <h4>Data Governance & Quality</h4>
+        <p>Data cataloging, lineage tracking, quality validation, and master data management with Great Expectations & Atlan.</p>
+        <div class="svc-tags"><span class="svc-tag">Great Expectations</span><span class="svc-tag">Atlan</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">📡</div>
+        <h4>Web Scraping & Data Extraction</h4>
+        <p>Scalable web crawlers, data extraction bots, and API harvesters for competitive intelligence and research.</p>
+        <div class="svc-tags"><span class="svc-tag">Scrapy</span><span class="svc-tag">Playwright</span><span class="svc-tag">Selenium</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. UI/UX Design -->
+  <div class="svc-category fade-up">
+    <div class="svc-category-header">
+      <div class="svc-category-icon" style="background:rgba(236,72,153,.15);">🎨</div>
+      <div>
+        <h2>UI/UX Design & Product Design</h2>
+        <p>Design systems, research-backed UX, and pixel-perfect interfaces that convert.</p>
+      </div>
+    </div>
+    <div class="svc-mini-grid">
+      <div class="svc-mini-card">
+        <div class="icon">🖼️</div>
+        <h4>UI Design & Prototyping</h4>
+        <p>High-fidelity Figma designs, interactive prototypes, and design handoff-ready specs for dev teams.</p>
+        <div class="svc-tags"><span class="svc-tag">Figma</span><span class="svc-tag">Adobe XD</span><span class="svc-tag">Framer</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🔬</div>
+        <h4>UX Research & Usability Testing</h4>
+        <p>User interviews, heatmaps, A/B testing, and usability testing to validate product decisions with real users.</p>
+        <div class="svc-tags"><span class="svc-tag">Hotjar</span><span class="svc-tag">Maze</span><span class="svc-tag">UserTesting</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🎨</div>
+        <h4>Design Systems & Style Guides</h4>
+        <p>Component libraries, design tokens, accessibility guidelines, and Storybook documentation for consistent UX.</p>
+        <div class="svc-tags"><span class="svc-tag">Storybook</span><span class="svc-tag">Tokens</span><span class="svc-tag">WCAG</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🌐</div>
+        <h4>Landing Page & Website Design</h4>
+        <p>Conversion-optimized landing pages, marketing websites, and portfolio sites that turn visitors into clients.</p>
+        <div class="svc-tags"><span class="svc-tag">CRO</span><span class="svc-tag">SEO-ready</span><span class="svc-tag">Responsive</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">📐</div>
+        <h4>Information Architecture</h4>
+        <p>Sitemap planning, user journey mapping, card sorting, and content hierarchy for intuitive navigation.</p>
+        <div class="svc-tags"><span class="svc-tag">IA</span><span class="svc-tag">Sitemaps</span><span class="svc-tag">Journey Maps</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">♿</div>
+        <h4>Accessibility (WCAG) Design</h4>
+        <p>WCAG 2.1 AA/AAA compliance audits, accessible color systems, screen-reader testing, and remediation.</p>
+        <div class="svc-tags"><span class="svc-tag">WCAG 2.1</span><span class="svc-tag">ARIA</span><span class="svc-tag">A11y</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. Blockchain & Web3 -->
+  <div class="svc-category fade-up">
+    <div class="svc-category-header">
+      <div class="svc-category-icon" style="background:rgba(251,146,60,.15);">⛓️</div>
+      <div>
+        <h2>Blockchain & Web3</h2>
+        <p>Decentralized applications, smart contracts, and tokenization solutions.</p>
+      </div>
+    </div>
+    <div class="svc-mini-grid">
+      <div class="svc-mini-card">
+        <div class="icon">📜</div>
+        <h4>Smart Contract Development</h4>
+        <p>Solidity-based smart contracts on Ethereum, Polygon, BSC, and Solana with comprehensive auditing.</p>
+        <div class="svc-tags"><span class="svc-tag">Solidity</span><span class="svc-tag">Ethereum</span><span class="svc-tag">Hardhat</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🌐</div>
+        <h4>dApp Development</h4>
+        <p>Decentralized applications with Web3.js/ethers.js, MetaMask integration, and IPFS storage.</p>
+        <div class="svc-tags"><span class="svc-tag">ethers.js</span><span class="svc-tag">IPFS</span><span class="svc-tag">MetaMask</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🪙</div>
+        <h4>Token & NFT Development</h4>
+        <p>ERC-20, ERC-721, ERC-1155 token development, NFT marketplaces, and tokenomics design.</p>
+        <div class="svc-tags"><span class="svc-tag">ERC-20</span><span class="svc-tag">NFT</span><span class="svc-tag">OpenSea</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🏦</div>
+        <h4>DeFi Protocol Development</h4>
+        <p>Automated market makers (AMMs), yield farming, staking protocols, and DEX development.</p>
+        <div class="svc-tags"><span class="svc-tag">DeFi</span><span class="svc-tag">AMM</span><span class="svc-tag">Uniswap</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🏢</div>
+        <h4>Enterprise Blockchain</h4>
+        <p>Private blockchain networks on Hyperledger Fabric, R3 Corda for supply chain, trade finance, and identity.</p>
+        <div class="svc-tags"><span class="svc-tag">Hyperledger</span><span class="svc-tag">Corda</span><span class="svc-tag">Fabric</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🔍</div>
+        <h4>Smart Contract Auditing</h4>
+        <p>Security audits, vulnerability discovery, and formal verification of smart contracts before mainnet deployment.</p>
+        <div class="svc-tags"><span class="svc-tag">Audit</span><span class="svc-tag">Slither</span><span class="svc-tag">MythX</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9. IoT & Embedded Systems -->
+  <div class="svc-category fade-up">
+    <div class="svc-category-header">
+      <div class="svc-category-icon" style="background:rgba(20,184,166,.15);">🌐</div>
+      <div>
+        <h2>IoT & Embedded Systems</h2>
+        <p>Connect physical devices to the digital world with smart, reliable IoT solutions.</p>
+      </div>
+    </div>
+    <div class="svc-mini-grid">
+      <div class="svc-mini-card">
+        <div class="icon">📡</div>
+        <h4>IoT Platform Development</h4>
+        <p>End-to-end IoT platforms with device management, telemetry ingestion, and real-time dashboards.</p>
+        <div class="svc-tags"><span class="svc-tag">AWS IoT</span><span class="svc-tag">MQTT</span><span class="svc-tag">Azure IoT</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🔌</div>
+        <h4>Embedded Firmware Development</h4>
+        <p>Bare-metal and RTOS firmware for STM32, ESP32, Arduino, and Raspberry Pi platforms.</p>
+        <div class="svc-tags"><span class="svc-tag">FreeRTOS</span><span class="svc-tag">ESP32</span><span class="svc-tag">STM32</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🏭</div>
+        <h4>Industrial IoT (IIoT)</h4>
+        <p>Manufacturing automation, predictive maintenance, SCADA integration, and OT/IT convergence solutions.</p>
+        <div class="svc-tags"><span class="svc-tag">OPC-UA</span><span class="svc-tag">Modbus</span><span class="svc-tag">SCADA</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🏠</div>
+        <h4>Smart Home & Building Automation</h4>
+        <p>Home automation systems, energy management, and BMS integration with Zigbee, Z-Wave, and Matter.</p>
+        <div class="svc-tags"><span class="svc-tag">Matter</span><span class="svc-tag">Zigbee</span><span class="svc-tag">Z-Wave</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🚗</div>
+        <h4>Fleet & Asset Tracking</h4>
+        <p>GPS-based vehicle tracking, geofencing, route optimization, and asset monitoring using cellular/LoRa.</p>
+        <div class="svc-tags"><span class="svc-tag">GPS</span><span class="svc-tag">LoRa</span><span class="svc-tag">Geofencing</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">⚕️</div>
+        <h4>Healthcare IoT (MedTech)</h4>
+        <p>Remote patient monitoring, wearables integration, HL7/FHIR compliance, and medical device connectivity.</p>
+        <div class="svc-tags"><span class="svc-tag">HL7/FHIR</span><span class="svc-tag">Wearables</span><span class="svc-tag">FDA</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10. AR/VR & Emerging Tech -->
+  <div class="svc-category fade-up">
+    <div class="svc-category-header">
+      <div class="svc-category-icon" style="background:rgba(139,92,246,.15);">🥽</div>
+      <div>
+        <h2>AR/VR & Emerging Technologies</h2>
+        <p>Immersive experiences, spatial computing, and cutting-edge tech for forward-thinking businesses.</p>
+      </div>
+    </div>
+    <div class="svc-mini-grid">
+      <div class="svc-mini-card">
+        <div class="icon">🥽</div>
+        <h4>Augmented Reality (AR)</h4>
+        <p>AR apps for iOS (ARKit) and Android (ARCore) — product visualization, try-on, navigation, and training.</p>
+        <div class="svc-tags"><span class="svc-tag">ARKit</span><span class="svc-tag">ARCore</span><span class="svc-tag">WebAR</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🌍</div>
+        <h4>Virtual Reality (VR)</h4>
+        <p>Immersive VR experiences for training simulations, real-estate walkthroughs, and virtual events.</p>
+        <div class="svc-tags"><span class="svc-tag">Unity</span><span class="svc-tag">Unreal</span><span class="svc-tag">Meta Quest</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🎮</div>
+        <h4>Game Development</h4>
+        <p>2D and 3D game development for mobile, PC, and console using Unity and Unreal Engine.</p>
+        <div class="svc-tags"><span class="svc-tag">Unity</span><span class="svc-tag">Unreal Engine</span><span class="svc-tag">WebGL</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🤝</div>
+        <h4>Digital Twin Development</h4>
+        <p>Virtual replicas of physical assets for simulation, monitoring, and predictive maintenance in manufacturing and utilities.</p>
+        <div class="svc-tags"><span class="svc-tag">Azure DT</span><span class="svc-tag">3D Models</span><span class="svc-tag">Simulation</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🖨️</div>
+        <h4>3D Visualization & Rendering</h4>
+        <p>Real-time 3D product configurators, architectural visualization, and WebGL-based interactive 3D experiences.</p>
+        <div class="svc-tags"><span class="svc-tag">Three.js</span><span class="svc-tag">Blender</span><span class="svc-tag">WebGL</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🤖</div>
+        <h4>Robotics Process Automation (RPA)</h4>
+        <p>Automate repetitive workflows using UiPath, Automation Anywhere, or Power Automate for zero-touch operations.</p>
+        <div class="svc-tags"><span class="svc-tag">UiPath</span><span class="svc-tag">Power Automate</span><span class="svc-tag">RPA</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 11. QA & Testing -->
+  <div class="svc-category fade-up">
+    <div class="svc-category-header">
+      <div class="svc-category-icon" style="background:rgba(34,197,94,.15);">✅</div>
+      <div>
+        <h2>QA & Software Testing</h2>
+        <p>Ensure flawless software quality with automated and manual testing expertise.</p>
+      </div>
+    </div>
+    <div class="svc-mini-grid">
+      <div class="svc-mini-card">
+        <div class="icon">🤖</div>
+        <h4>Test Automation</h4>
+        <p>End-to-end automated test suites using Selenium, Cypress, Playwright, and Appium for web and mobile.</p>
+        <div class="svc-tags"><span class="svc-tag">Cypress</span><span class="svc-tag">Playwright</span><span class="svc-tag">Appium</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">⚡</div>
+        <h4>Performance & Load Testing</h4>
+        <p>Stress tests, load simulations, and bottleneck analysis using JMeter, Locust, and k6 at scale.</p>
+        <div class="svc-tags"><span class="svc-tag">JMeter</span><span class="svc-tag">k6</span><span class="svc-tag">Locust</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🔒</div>
+        <h4>Security Testing</h4>
+        <p>Application security testing, dependency scanning, OWASP Top 10 checks, and fuzz testing.</p>
+        <div class="svc-tags"><span class="svc-tag">OWASP ZAP</span><span class="svc-tag">Snyk</span><span class="svc-tag">Fuzz</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🛠️</div>
+        <h4>Manual & Exploratory Testing</h4>
+        <p>Expert manual testing, exploratory testing sessions, and regression test management with TestRail.</p>
+        <div class="svc-tags"><span class="svc-tag">TestRail</span><span class="svc-tag">JIRA</span><span class="svc-tag">BDD</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">📱</div>
+        <h4>Mobile App Testing</h4>
+        <p>Real-device testing on iOS and Android, cross-device compatibility, and accessibility audits.</p>
+        <div class="svc-tags"><span class="svc-tag">BrowserStack</span><span class="svc-tag">Firebase Test Lab</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🔁</div>
+        <h4>API Testing</h4>
+        <p>Comprehensive REST and GraphQL API testing with Postman, REST-assured, and contract testing with Pact.</p>
+        <div class="svc-tags"><span class="svc-tag">Postman</span><span class="svc-tag">REST-assured</span><span class="svc-tag">Pact</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 12. Digital Marketing Technology -->
+  <div class="svc-category fade-up">
+    <div class="svc-category-header">
+      <div class="svc-category-icon" style="background:rgba(245,158,11,.15);">📣</div>
+      <div>
+        <h2>Digital Marketing Technology</h2>
+        <p>Tech-powered marketing solutions that amplify reach and maximize ROI.</p>
+      </div>
+    </div>
+    <div class="svc-mini-grid">
+      <div class="svc-mini-card">
+        <div class="icon">🔍</div>
+        <h4>SEO & Technical SEO</h4>
+        <p>On-page and off-page optimization, Core Web Vitals, structured data, and technical SEO audits.</p>
+        <div class="svc-tags"><span class="svc-tag">SEO</span><span class="svc-tag">Schema</span><span class="svc-tag">Lighthouse</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">📧</div>
+        <h4>Marketing Automation</h4>
+        <p>Email campaigns, lead nurturing workflows, and multi-channel automation using HubSpot and Klaviyo.</p>
+        <div class="svc-tags"><span class="svc-tag">HubSpot</span><span class="svc-tag">Klaviyo</span><span class="svc-tag">Mailchimp</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">📊</div>
+        <h4>Analytics & Tracking Setup</h4>
+        <p>GA4, Google Tag Manager, Meta Pixel, and custom event tracking for data-driven marketing decisions.</p>
+        <div class="svc-tags"><span class="svc-tag">GA4</span><span class="svc-tag">GTM</span><span class="svc-tag">Mixpanel</span></div>
+      </div>
+      <div class="svc-mini-card">
+        <div class="icon">🤝</div>
+        <h4>CRM Implementation</h4>
+        <p>Salesforce, HubSpot CRM, Zoho, and Pipedrive setup, customization, and team training for sales success.</p>
+        <div class="svc-tags"><span class="svc-tag">Salesforce</span><span class="svc-tag">HubSpot</span><span class="svc-tag">Zoho</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section style="background:var(--clr-bg2);">
+  <div class="section-header fade-up">
+    <div class="section-label">Our Process</div>
+    <h2 class="section-title">How We Deliver <span style="background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Excellence</span></h2>
+    <p class="section-sub">A proven, transparent delivery process that keeps you in control at every stage.</p>
+  </div>
+  <div class="grid-4" style="gap:24px;">
+    <div class="fade-up delay-1" style="text-align:center;">
+      <div style="width:64px;height:64px;background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.25);border-radius:50%;display:grid;place-items:center;font-size:1.5rem;margin:0 auto 20px;">🔍</div>
+      <h4 style="font-weight:700;margin-bottom:8px;font-family:'Space Grotesk',sans-serif;">1. Discovery</h4>
+      <p style="color:var(--clr-muted);font-size:.88rem;">We deeply understand your goals, audience, and technical constraints before writing a single line of code.</p>
+    </div>
+    <div class="fade-up delay-2" style="text-align:center;">
+      <div style="width:64px;height:64px;background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.25);border-radius:50%;display:grid;place-items:center;font-size:1.5rem;margin:0 auto 20px;">🎨</div>
+      <h4 style="font-weight:700;margin-bottom:8px;font-family:'Space Grotesk',sans-serif;">2. Design</h4>
+      <p style="color:var(--clr-muted);font-size:.88rem;">Architecture blueprints and UI/UX prototypes reviewed and approved by you before development begins.</p>
+    </div>
+    <div class="fade-up delay-3" style="text-align:center;">
+      <div style="width:64px;height:64px;background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.25);border-radius:50%;display:grid;place-items:center;font-size:1.5rem;margin:0 auto 20px;">⚙️</div>
+      <h4 style="font-weight:700;margin-bottom:8px;font-family:'Space Grotesk',sans-serif;">3. Development</h4>
+      <p style="color:var(--clr-muted);font-size:.88rem;">Agile sprints with weekly demos. You see real progress — not just status reports.</p>
+    </div>
+    <div class="fade-up delay-4" style="text-align:center;">
+      <div style="width:64px;height:64px;background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.25);border-radius:50%;display:grid;place-items:center;font-size:1.5rem;margin:0 auto 20px;">🚀</div>
+      <h4 style="font-weight:700;margin-bottom:8px;font-family:'Space Grotesk',sans-serif;">4. Launch & Support</h4>
+      <p style="color:var(--clr-muted);font-size:.88rem;">We handle deployment, monitoring, and ongoing support so you can focus on your business.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <h2>Let's Build Your Next Big Thing</h2>
+  <p>Tell us about your project and we'll put together a tailored proposal within 48 hours.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn btn-white">Request a Proposal</a>
+    <a href="products.html" class="btn btn-outline">View Our Products</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>🔮 <span>MindMesh Technology</span></h3>
+      <p>Building intelligent software solutions that transform businesses and empower people across the globe.</p>
+      <div class="footer-social">
+        <a href="#" title="LinkedIn">💼</a>
+        <a href="#" title="Twitter">🐦</a>
+        <a href="#" title="GitHub">🐙</a>
+        <a href="#" title="YouTube">▶️</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Custom Development</a></li>
+        <li><a href="services.html">Mobile Apps</a></li>
+        <li><a href="services.html">Cloud & DevOps</a></li>
+        <li><a href="services.html">AI & ML</a></li>
+        <li><a href="services.html">Cybersecurity</a></li>
+        <li><a href="services.html">Blockchain & Web3</a></li>
+        <li><a href="services.html">IoT Solutions</a></li>
+        <li><a href="services.html">AR/VR & Emerging Tech</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="products.html">NexaERP</a></li>
+        <li><a href="products.html">MindBot AI</a></li>
+        <li><a href="products.html">DataLens</a></li>
+        <li><a href="products.html">HireFlow</a></li>
+        <li><a href="products.html">SecureVault</a></li>
+        <li><a href="products.html">ShopForge</a></li>
+        <li><a href="products.html">TaskBoard Pro</a></li>
+        <li><a href="products.html">MailMesh</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html">Our Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 MindMesh Technology. All rights reserved.</span>
+    <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
