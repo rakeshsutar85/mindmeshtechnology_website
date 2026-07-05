@@ -1,0 +1,47 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes pulse-diamond {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.15); opacity: 1; }
+    }
+    @keyframes float-left {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+    @keyframes float-right {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+    @keyframes pulse-dot {
+      0%, 100% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.5); opacity: 1; }
+    }
+    .diamond { transform-origin: 50px 26px; animation: pulse-diamond 4s ease-in-out infinite; }
+    .leg-l { animation: float-left 4s ease-in-out infinite; }
+    .leg-r { animation: float-right 4s ease-in-out infinite 2s; }
+    .dot-2 { transform-origin: 44px 26px; animation: pulse-dot 2s ease-in-out infinite 0s; }
+    .dot-3 { transform-origin: 56px 26px; animation: pulse-dot 2s ease-in-out infinite 1s; }
+    .dot-top { transform-origin: 50px 12px; animation: pulse-dot 3s ease-in-out infinite 0.5s; }
+  </style>
+  <defs>
+    <linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f8ef7" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="brand-grad-2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#4f8ef7" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="#12172b" />
+  <!-- Left leg -->
+  <path class="leg-l" d="M28 72 L28 36 L44 26 L44 62 Z" fill="url(#brand-grad)" />
+  <!-- Right leg -->
+  <path class="leg-r" d="M72 72 L72 36 L56 26 L56 62 Z" fill="url(#brand-grad-2)" />
+  <!-- Center diamond -->
+  <path class="diamond" d="M44 26 L50 40 L56 26 L50 12 Z" fill="#7c3aed" opacity="0.9" />
+  <circle cx="50" cy="40" r="5" fill="#06b6d4" />
+  <circle class="dot-2" cx="44" cy="26" r="4" fill="#fff" />
+  <circle class="dot-3" cx="56" cy="26" r="4" fill="#fff" />
+  <circle class="dot-top" cx="50" cy="12" r="4" fill="#fff" />
+</svg>
