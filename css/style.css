@@ -1327,3 +1327,18 @@ footer {
     flex-direction: column;
   }
 }
+
+/* ============================================================
+   CAREERS & BLOG
+   ============================================================ */
+.career-card:hover {
+  transform: translateY(-8px) !important;
+  border-color: var(--clr-brand) !important;
+  box-shadow: 0 12px 40px rgba(79, 142, 247, 0.08);
+}
+
+.blog-section .product-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--clr-brand);
+  box-shadow: 0 12px 40px rgba(79, 142, 247, 0.08);
+}
